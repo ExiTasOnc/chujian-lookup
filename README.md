@@ -7,11 +7,11 @@
 - **字形圖與原始標籤 Glyph images and labels**：CHUBS — A Large-Scale Dataset of Chu Bamboo Slip Script (THUNLP, https://github.com/THUNLP/Chujian), Apache License 2.0. 目錄名（`{部件}（釋讀）`、`○（釋讀）`）即原數據集標籤，本站原樣保留。
 - **Baxter–Sagart 2014**：William H. Baxter & Laurent Sagart, *Old Chinese: A New Reconstruction* (Oxford University Press, 2014)。讀音取自作者發佈的 Baxter-Sagart Old Chinese reconstruction v1.1 (20 September 2014)，Creative Commons Attribution-NonCommercial-ShareAlike 4.0。本站為非營利學術用途。
 - **Schuessler OCM**：Axel Schuessler, *Minimal Old Chinese and Later Han Chinese: A Companion to Grammata Serica Recensa* (University of Hawaiʻi Press, 2009)。本站所列 OCM 讀音與韻部節號由本項目自書中整理，僅供研究檢索，引用請核原書。
+- **鄭張尚芳**：鄭張尚芳《上古音系》（上海教育出版社，2003；第二版 2013）。擬音與韻部標籤取自韻典網（ytenx, https://ytenx.org ）整理的機讀版；去聲小類照原表標籤顯示。正式引用請引原書。
 - **GSR 諧聲系列**：Unicode Unihan kGSR ∪ Baxter–Sagart 表的 GSR 欄。
 
 人工補充的拆分、釋讀、讀音在頁面上標有「人工／模型／已核」。
 
-本站不含鄭張尚芳《上古音系》機讀數據（該數據僅限內部分析）。
 
 ## 使用 / Usage
 

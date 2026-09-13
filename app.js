@@ -22,7 +22,7 @@ window.addEventListener('error', e => { const a = document.getElementById('app')
   })();
   document.title = M.title || document.title;
   const $bt = document.querySelector('.brand .t'); if ($bt) $bt.textContent = M.title;
-  if (M.internal && document.getElementById('banner')) document.getElementById('banner').textContent = '內部版（含鄭張數據，勿公開）';
+  if (document.getElementById('banner')) document.getElementById('banner').textContent = '';
   if (document.getElementById('foot')) document.getElementById('foot').innerHTML = '';
 
   // ---------- 索引 ----------
