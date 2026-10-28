@@ -157,7 +157,7 @@ window.addEventListener('error', e => { const a = document.getElementById('app')
       else if (seg[0] === 'comps') html = viewComps(q);
       else if (seg[0] === 'rimes') html = viewRimes(seg[1], seg[2]);
       else if (seg[0] === 'series') html = viewSeries(seg[1]);
-      else if (seg[0] === 'chars') html = viewHome(q);
+      else if (seg[0] === 'chars') html = viewCatalog(q);
       else if (seg[0] === 'sch') html = viewSchGroup(seg[1]);
       else html = viewHome();
     } catch (err) { html = `<h1>出錯了</h1><pre>${esc(err.stack || err)}</pre>`; console.error(err); }
@@ -219,7 +219,11 @@ window.addEventListener('error', e => { const a = document.getElementById('app')
   function charsSection(title, list) {
     return `<section class="group"><h2>${title} <span class="n">${list.length} 字</span></h2>${charResults(list)}</section>`;
   }
-  function viewHome(q = new URLSearchParams()) {
+  function viewHome() {
+    return `<div class="hero"><h1>${esc(M.title)}</h1><div class="en">${esc(M.subtitle || '')}</div>
+      <form class="bigsearch" data-search><input name="q" placeholder="釋讀字／部件／擬音／韻部" aria-label="首頁檢索" autofocus>${modeSelect('auto')}<button type="submit">查詢</button></form></div>`;
+  }
+  function viewCatalog(q = new URLSearchParams()) {
     const query = (q.get('q') || '').trim(), img = q.get('images') || '', bu = q.get('bu') || '';
     const allSources = q.get('scope') === 'all';
     let list = (allSources ? ALL_CHARS : CATALOG).filter(ch => !bu || buOf(ch, 'SCH').includes(bu));
